@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html xml:lang="en" lang="en">
+<head>
+  <title>CSC 196V  Assignment 2</title>
+  <style>
+* { padding: 0; margin: 0; }
+
+body {
+  margin: 0 auto 0 auto;
+  padding: 0;
+  background-color: #33333f;
+  width: 840px;
+  font-family: "Avenir", "Avenir Next", Helvetica Neue, Arial;
+  font-size: 0.95em;
+}
+
+a, a:visited { text-decoration: none; color: #7533f4; }
+a:hover { text-decoration: underline; color: #f4b014; }
+img, a.img, a:hover.img { border: none; }
+
+img {
+  max-width: 800px;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #492a7c;
+  background-color: inherit;
+  font-weight: normal;
+  padding: 0 0 5px 0;
+  margin: 15px 0 0 0;
+  border: none;
+  clear: right;
+}
+h1 { font-size: 18pt; margin:  5px 0 10px 0; line-height: 28px; }
+h2 { font-size: 14pt; margin: 30px 0 15px 0; letter-spacing: 0.01em; border-bottom: 1px solid #ccc;  line-height: 20px;}
+h3 { font-size: 13pt; }
+h4 { font-size: 12pt; }
+h5 { font-size: 11pt; }
+p { margin: 0 0 10px 0; }
+hr { border: 0px; border-top: 1px solid #ccc; height: 0px; }
+ol { margin: 1em; }
+
+.content {
+  margin: 0;
+  padding: 15px 20px;
+  background-color: #ffffff;
+}
+
+.article {
+  line-height: 1.5em;
+}
+
+.entry  {
+  border-top: 1px solid #ddd;
+  padding-top: 2px;
+  margin-top: 3em;
+}
+  </style>
+</head>
+
+<body>
+<div class='content'>
+
+<section>
+  <h1>Assignment 2: Exploratory Data Analysis Of The Well</h1>
+
+  <p>
+    <strong>Dimitrios Papageorgacopoulos</strong>
+  </p>
+</section>
+
+<section>
+  <h2>Dataset</h2>
+
+  <p>
+    The Dataset I've explored is a collection of attendance records from CSUS's very own gym, The Well.
+    The Well first opened in 2010 and has since been a popular addition to the campus.
+    <br />
+    <br />The dataset highlights a variety of important attendance information. Data is seperated
+    by gender, days of the week, and the grand totals for entire years. I have additionally
+    added data to observe trends against weather and to model attendance against the school population.
+    The majority of the data I used was provided to me by The Well.
+    <br />
+    As an avid user of The Well facility, my primary goal in exploring this dataset was finding ways to
+    optimize my workouts- primarily by finding when the gym was the least populated. This drove me to explore
+    a variety of avenues such as weather and day of the week to determine when the best time for me to go to
+    the gym was to avoid waiting on other people.
+  </p>
+
+  <p>
+    The data is available online at:
+    <strong>
+      <a href="DATASET-URL-HERE">DATASET-URL-HERE</a>
+    </strong>
+  </p>
+</section>
+
+<section>
+  <h2>Initial Analysis Questions</h2>
+  <ol>
+    <li>Which days of the week are the busiest?</li>
+    <li>When in the semester does the gym get less busy?</li>
+    <li>Does gender play a factor in retention rate (continued attendance)?</li>
+  </ol>
+</section>
+
+<section>
+  <h2>Discoveries &amp; Insights</h2>
+
+    <div class="entry">
+        <img src="CheckinDash.png" />
+        <p class="caption">
+            Hottest Times To Go To The Gym.
+        </p>
+    </div>
+
+  <div class="entry">
+    <img src="DaysOfTheWeekPie.png" />
+    <p class="caption">
+    Attendance by day of the week.
+    </p>
+  </div>
+
+  <div class="entry">
+    <img src="DailyByYear.png" />
+    <p class="caption">
+    A day by day capture of attendance over the last 4 years (2016-2019).
+    </p>
+  </div>
+
+  <div class="entry">
+    <img src="daysByAttendance.png" />
+    <p class="caption">
+    A depiction of the busiest days of the year in 2018.
+    </p>
+  </div>
+
+    <div class="entry">
+        <img src="SeasonalAverages.png" />
+        <p class="caption">
+            A summary of attendance by season (Summer omitted)
+        </p>
+    </div>
+
+    <div class="entry">
+        <img src="vsWeather.png" />
+        <p class="caption">
+            Effects of Weather and Temperature On Well Attendance
+        </p>
+    </div>
+
+  <div class="entry">
+    <img src="Pupulation.jpg" />
+    <p class="caption">
+    Seasonal Depictions of Attendance (2017 - 2018).
+    </p>
+  </div>
+
+
+  <div class="entry">
+    <img src="MonthlyGender.png" />
+    <p class="caption">
+    Total Attendance by Gender (2018).
+    </p>
+  </div>
+
+  <div class="entry">
+    <img src="MonthlyGenderPie.png" />
+    <p class="caption">
+    Monthly Attendance As A Ratio Of Gender (2018).
+    </p>
+  </div>
+
+  <div class="entry">
+    <img src="Divergant.png" />
+    <p class="caption">
+    A depiction of Gender Attendance By Month(2017 vs 2018).
+    </p>
+  </div>
+
+
+
+  <div class="entry">
+    <h3>Summary</h3>
+    <p>
+    WRITE FINAL SUMMARY HERE.
+    </p>
+  </div>
+</section>
+
+</div>
+</body>
+</html>
